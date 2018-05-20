@@ -1,13 +1,11 @@
 FROM galexrt/kubernetes-mailserver-base:latest
 
-RUN apt-get -q update && \
-    apt-get -q upgrade -y && \
-    apt-get install -y \
+RUN apt-get install -y \
         postfix \
-        postfix-ldap
+        postfix-ldap \
         postfix-mysql \
         postfix-pcre \
-        postfix-pgsql \
+        postfix-pgsql
 
 COPY ./includes/supervisord.conf /etc/supervisor/supervisord.conf
 COPY ./includes/rsyslog.conf /etc/rsyslog.conf

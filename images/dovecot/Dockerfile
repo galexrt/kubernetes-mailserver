@@ -1,8 +1,6 @@
 FROM galexrt/kubernetes-mailserver-base:latest
 
-RUN apt-get -q update && \
-    apt-get -q upgrade -y && \
-    apt-get install -y \
+RUN apt-get install -y \
         supervisor \
         rsyslog \
         dovecot-core \

@@ -1,0 +1,5 @@
+sqlite	postfix-sqlite.so	dict_sqlite_open	
+mysql	postfix-mysql.so	dict_mysql_open	
+ldap	postfix-ldap.so	dict_ldap_open	
+pcre	postfix-pcre.so	dict_pcre_open	
+pgsql	postfix-pgsql.so	dict_pgsql_open	

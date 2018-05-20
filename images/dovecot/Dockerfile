@@ -8,7 +8,7 @@ RUN apt-get -q update && \
         dovecot-core \
         dovecot-imapd \
         dovecot-lmtpd \
-        dovecot-managesieved
+        dovecot-managesieved \
         dovecot-mysql \
         dovecot-pgsql \
         dovecot-pop3d
